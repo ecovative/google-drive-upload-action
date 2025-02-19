@@ -103,7 +103,7 @@ async function main() {
 
     const credentialsJSON = JSON.parse(Buffer.from(credentials, 'base64').toString());
     const scopes = ['https://www.googleapis.com/auth/drive.file'];
-    const auth = new google.auth.JWT(credentialsJSON.client_email, null, credentialsJSON.private_key, scopes, owner);
+    const auth = new google.auth.JWT(credentialsJSON.client_email, null, credentialsJSON.private_key, scopes);
     const drive = google.drive({ version: 'v3', auth });
 
     for (let i = 0; i < targets.length; i++) {
