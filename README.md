@@ -8,7 +8,7 @@ steps:
     - uses: actions/checkout@v2
 
     - name: Upload a file to Google Drive
-      uses: willo32/google-drive-upload-action@v1
+      uses: ecovative/google-drive-upload-action@v1
       with:
         target: <LOCAL_PATH_TO_YOUR_FILE>
         credentials: ${{ secrets.<YOUR_SERVICE_ACCOUNT_CREDENTIALS> }}

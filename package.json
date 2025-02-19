@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Github action to upload a file to Google Drive using a service account",
   "main": "index.js",
-  "author": "Software devel <software_devel@willo.com>",
-  "repository": "git@github.com:willo32/google-drive-upload-action.git",
+  "author": "Neale Petrillo <neale@ecovative.com>",
+  "repository": "git@github.com:ecovative/google-drive-upload-action.git",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -12,13 +12,15 @@
     "build": "ncc build src/index.js"
   },
   "devDependencies": {
+    "@eslint/js": "^9.20.0",
     "@types/node": "^20.10.7",
     "@vercel/ncc": "^0.38.1",
-    "eslint": "^7.20.0",
-    "eslint-config-willo-base": "^1.3.3"
+    "eslint": "^9.20.1",
+    "globals": "^15.15.0"
   },
   "dependencies": {
-    "@actions/core": "^1.10.1",
-    "googleapis": "^130.0.0"
+    "@actions/core": "^1.11.1",
+    "googleapis": "^144.0.0",
+    "inquirer": "^12.4.2"
   }
 }
