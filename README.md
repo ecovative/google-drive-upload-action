@@ -10,7 +10,7 @@ steps:
     - name: Upload a file to Google Drive
       uses: ecovative/google-drive-upload-action@v2
       with:
-        target:
+        targets:
           - my_file.pdf
           - your_file.png
         credentials: ${{ secrets.<YOUR_SERVICE_ACCOUNT_CREDENTIALS> }}
@@ -18,8 +18,8 @@ steps:
 ```
 
 ### Inputs
-#### `target` (Required):
-List of local paths to the file to upload, can be relative from github runner current directory.
+#### `targets` (Required):
+List of local paths to the files to upload, can be relative from github runner current directory.
 
 #### `credentials` (Required):
 A service account public/private key pair encoded in base64.
