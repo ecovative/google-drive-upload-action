@@ -26,7 +26,7 @@ function validateFiles(targets) {
         }
         try {
             fs.accessSync(target, fs.constants.R_OK);
-        } catch (error) {
+        } catch {
             throw new Error(`File not readable: ${target}`);
         }
     }
