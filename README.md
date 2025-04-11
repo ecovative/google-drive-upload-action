@@ -8,7 +8,7 @@ steps:
     - uses: actions/checkout@v4
 
     - name: Upload a file to Google Drive
-      uses: ecovative/google-drive-upload-action@v2
+      uses: ecovative/google-drive-upload-action@v3
       with:
         targets:
           - my_file.pdf
