@@ -21,6 +21,6 @@
   "dependencies": {
     "@actions/core": "^1.11.1",
     "googleapis": "^144.0.0",
-    "inquirer": "^12.4.2"
+    "inquirer": "^12.5.2"
   }
 }
