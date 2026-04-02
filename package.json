@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@actions/core": "^1.11.1",
-    "googleapis": "^160.0.0",
+    "googleapis": "^164.1.0",
     "inquirer": "^12.9.6"
   }
 }
